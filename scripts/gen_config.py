@@ -133,7 +133,8 @@ if profile.get("external_target", False):
 
 config_output = f"""CONFIG_TARGET_{profile["target"]}=y
 CONFIG_TARGET_{profile["target"]}_{profile["subtarget"]}=y
-"""CONFIG_TARGET_{profile["target"]}_{profile["subtarget"]}_DEVICE_{profile["profile"]}=y
+"""
+CONFIG_TARGET_{profile["target"]}_{profile["subtarget"]}_DEVICE_{profile["profile"]}=y
 """
 
 config_output += f"{profile.get('diffconfig', '')}"
