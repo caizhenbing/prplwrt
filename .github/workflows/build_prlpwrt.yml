@@ -33,6 +33,8 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: Clone source and install
         run: |
+          sudo wget https://bootstrap.pypa.io/pip/2.7/get-pip.py
+          sudo python get-pip.py
           git clone https://github.com/caizhenbing/prplwrt
           cd prplwrt
           ./scripts/gen_config.py intel_mips prpl webui luci
