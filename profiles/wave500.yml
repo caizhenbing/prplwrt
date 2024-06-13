@@ -18,7 +18,14 @@ feeds:
     tracking_branch: master
 
 packages:
-  - ltq-wlan-wave_5_x
-  - ltq-wlan-wave_5_x-rflib
-  - kmod-lantiq-wlan-wave-support_5_x
+#  - ltq-wlan-wave_5_x
+#  - ltq-wlan-wave_5_x-rflib
+#  - kmod-lantiq-wlan-wave-support_5_x
 #  - wav500_ax_image
+  - crda_wave
+  - hostapd_wave
+  - iw_wave
+  - lq-wave-300_5_x
+  - owrt-dsl-scripts
+  - owrt-ppa-scripts
+  - owrt-sys-scripts
