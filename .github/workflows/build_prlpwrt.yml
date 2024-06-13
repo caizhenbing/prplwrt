@@ -37,7 +37,7 @@ jobs:
           sudo python get-pip.py
           git clone https://github.com/caizhenbing/prplwrt
           cd prplwrt
-          ./scripts/gen_config.py intel_mips prpl webui luci
+          ./scripts/gen_config.py intel_mips prpl webui luci debug
           cd package/feeds/luci
           ln -sf ../../../feeds/luci/collections/luci ./
           cd ../../../
@@ -47,5 +47,5 @@ jobs:
       - name: Build
         run: |
           cd prplwrt
-          make V=s
+          make
 
